@@ -4,7 +4,7 @@ from airflow.providers.sqlite.operators.sqlite import SqliteOperator
 from datetime import datetime
 
 default_args = {
-    'start_date': date_time(2022, 05, 16)  
+    'start_date': datetime.fromisoformat('2022-05-17')
 }
 
 with DAG('user_processing', schedule_interval='@daily',
