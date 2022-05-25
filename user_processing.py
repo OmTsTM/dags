@@ -22,6 +22,7 @@ with DAG('user_processing', schedule_interval='@daily',
                 username TEXT NOT NULL,
                 password TEXT NOT NULL,
                 teste TEXT NOT NULL,
+                teste2 TEXT NOT NULL,
                 email TEXT NOT NULL PRIMARY KEY 
             );
             '''
